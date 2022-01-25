@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Good Vibes Form</title>
+</head>
+<body>
+	<header>
+		<div id="form-title" class="text-center">
+			<h1>Good Vibes Form</h1>
+		</div>
+	</header>
+	<main >
+		
+		<div id="survey-form" class="text-center">
+			<p class="text-center">Tell us Something about Your Day!</p>
+			<form>
+				<div id="form-rows">
+					<div class="labels">
+						<label for="name">Name</label>
+					</div>
+					<div class="fields">
+						<input class="input-fields" type="text" name="name" placeholder="Enter your name">
+					</div>
+
+					<div class="labels">
+						<label for="email">Email</label>
+					</div>
+					<div class="fields">
+						<input class="input-fields" type="email" name="email" placeholder="Enter your email">
+					</div>
+
+					<div class="labels">
+						<label for="day-scale">On a scale of 1-10, How good was it?</label>
+					</div>
+					<div class="fields">
+						<input class="input-fields" type="number" name="day-scale" placeholder="Enter a number between 1 and 10">
+					</div>
+
+					<div class="labels">
+						<label for="where">Where did it happen?</label>
+					</div>
+					<div class="fields">
+						<select class="dropdown" name="where">
+							<option value="home">At Home</option>
+							<option value="work">Work</option>
+							<option value="commute">Commute</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="labels">
+						<label for="time">At what time of the day did it happen?</label>
+					</div>
+					<div class="fields">
+						<ul style="list-style: none;">
+							<li class="radio">
+								<label>Morning<input class="user-selection" type="radio" value="1" name="time">
+							    </label>
+							</li>
+							<li class="radio">
+								<label>Afternoon<input class="user-selection" type="radio" value="2" name="time">
+							    </label>
+							</li>
+							<li class="radio">
+								<label>Evening<input class="user-selection" type="radio" value="3" name="time">
+							    </label>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<button  type="submit" class="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+</body>
+</html>
